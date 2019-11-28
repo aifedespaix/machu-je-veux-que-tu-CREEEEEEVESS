@@ -1,0 +1,30 @@
+body, html {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #000;
+}
+
+a {
+  color: #fafafa;
+  text-decoration: underline;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+  background-color: #004305;
+  color: #fafafa;
+  min-height: 100%; // le bug vient d'ici
+  // comme si le min-height enculait let height: auto;
+}
+
+footer {
+  background-color: #8d0070;
+  color: #fafafa;
+}
